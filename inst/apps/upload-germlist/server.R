@@ -18,7 +18,7 @@ shinyServer(
           output$ui <- renderUI({
             list(
               selectInput(inputId = "sheet", label = "Select a sheet:", choices = sheets),
-              textInput(inputId = 'arg', label = 'Additional Arguments:', value = ' '),
+              textInput(inputId = 'arg', label = 'Start at line number:',value = '1'),
               tags$hr()
             )
           })
@@ -32,7 +32,7 @@ shinyServer(
               checkboxInput(inputId = 'header', label = 'First line as header', value = TRUE),
               textInput(inputId = 'sep', label = 'Separator', value = " "),
               textInput(inputId = 'quote', label = 'Quote', value = '\"'),
-              textInput(inputId = 'arg', label = 'Additional Arguments:', value = ' '),
+              textInput(inputId = 'arg' , label = 'Start at line number:', value = '1'),
               tags$hr()
             )
           })
