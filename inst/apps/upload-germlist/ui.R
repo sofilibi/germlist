@@ -19,7 +19,7 @@ shinyUI(pageWithSidebar(
     #tags$a('Download Germlist template', href = 'ejemplotemplate.xlsx', target="blank"),
    tags$div(
      HTML('
-          <a href="/template.xltx"><img src="/b1.png"  alt="germlist template" title="germlist template"></a>
+          <a href="/template.xltx"><img src="/b2.png"  alt="germlist template" title="germlist template"></a>
           
           ')
    ),
